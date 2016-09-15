@@ -26,7 +26,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         barView.alpha = 0
-        self.barView.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
+        barView.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
+        barView.backgroundColor = UIColor.blueColor()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -40,6 +41,7 @@ class ViewController: UIViewController {
         moveUp()
         fade()
         expandWithDelay()
+        changeColor()
     }
     
     
@@ -52,23 +54,33 @@ class ViewController: UIViewController {
     internal func moveUp() {
         UIView.animateWithDuration(0.5, animations: {
             self.barView.center.y -= 60
-        })
+        }) { (_) -> Void in
+            print ("moveUp executed")
+        }
     }
     
     internal func expand() {
         UIView.animateWithDuration(0.5, animations: { () -> Void in
             self.barView.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
         }) { (value:Bool) -> Void in
-            print ("Job's done.")
+            print ("expand executed")
         }
     
     }
 
     internal func expandWithDelay() {
-        UIView.animateWithDuration(1, delay: 1, options: [.Repeat], animations: {
+        UIView.animateWithDuration(0.5, delay: 0.2, options: [], animations: {
             self.barView.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
             }) { (_) in
-                print ("Completion")
+                print ("expandWithDelay executed")
+        }
+    }
+    
+    internal func changeColor() {
+        UIView.animateWithDuration(2, delay: 0.6, options: [], animations: {
+            self.barView.backgroundColor = UIColor.redColor()
+        }) { (_) in
+            print ("changeColor executed")
         }
     }
     

@@ -70,7 +70,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bdU-ZB-hzb">
                                 <rect key="frame" x="95" y="184" width="198" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -83,6 +83,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tip Calculator" id="eO2-BS-hB5"/>
                     <connections>
+                        <outlet property="barView" destination="WCD-PY-YDT" id="kK0-A2-w90"/>
                         <outlet property="billField" destination="KY1-Sh-V6G" id="VMb-cC-ajk"/>
                         <outlet property="tipControl" destination="crp-Af-KHl" id="Tho-jJ-sxN"/>
                         <outlet property="tipLabel" destination="bdU-ZB-hzb" id="cT6-aS-Nx7"/>

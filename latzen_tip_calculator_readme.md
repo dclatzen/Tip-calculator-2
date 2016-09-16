@@ -29,8 +29,17 @@ Here's a walkthrough of implemented user stories:
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
+Challenges:
 
-Describe any challenges encountered while building the app.
+I ran into a recurring error "Thread 1: signal SIGABRT" which pretty much drove me crazy until I found a Youtube video addressing it. So that was good. 
+
+I kept wishing I knew more of the syntax, like missing words in a vocabulary. I wanted the command for "Make this text field automaticaly have focus." But I didn't know how to write that in code. I also wanted to change the color of elements, but that wasn't as straightforward as editing a hex value. Took a lot of time to figure out the syntax for things I take for granted in other contexts.
+
+It was also hard to figure out what the Readme was asking for in the "Video Walkthrough" section. The tutorial showed us how to embed a gif, but the "href" in the Readme template seemed to be asking for an image held in a mythical "course_images" directory. That threw me because I didn't find any instructions for how to upload my gif to that directory. I eventually decided to embed it and hope for the best.
+
+I'm planning to add more elegant animations, with a larger "subtotal" initial screen, along with a "split" option.
+
+Thanks!
 
 ## License  
 

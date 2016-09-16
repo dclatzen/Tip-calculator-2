@@ -1,10 +1,10 @@
-# Pre-work - *Name of App Here*
+# Pre-work - *TipCal*
 
-**Tipit** is a tip calculator application for iOS.
+**TipCal** is a tip calculator application for iOS.
 
 Submitted by: **Devon Latzen**
 
-Time spent: **X** hours spent in total
+Time spent: **6** hours spent in total
 
 ## User Stories
 
@@ -12,19 +12,19 @@ The following **required** functionality is complete:
 * [x] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
 
 The following **optional** features are implemented:
-* [ ] Custom font
-* [ ] UI animations
-* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+* [x] Custom font
+* [x] UI animations
+* [x] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [x] Pretty awesome green color.
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<a href="/course_images/ios_for_designers/name%20of%20your%20file%20in%20the%20repo.gif" target="_blank"><img src='/course_images/ios_for_designers/name%20of%20your%20file%20in%20the%20repo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /></a>
+<a href="/course_images/ios_for_designers/latzen_tip_calculator_recording_2.gif" target="_blank"><img src='/course_images/ios_for_designers/latzen_tip_calculator_recording_2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /></a>
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 

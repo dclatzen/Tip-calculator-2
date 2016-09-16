@@ -24,7 +24,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<a href="/Tip-calculator-2/blob/master/latzen_tip_calculator_recording_2.gif" target="_blank"><img src='/Tip-calculator-2/blob/master/latzen_tip_calculator_recording_2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /></a>
+<a href="/blob/master/latzen_tip_calculator_recording_2.gif" target="_blank"><img src='/blob/master/latzen_tip_calculator_recording_2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /></a>
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 

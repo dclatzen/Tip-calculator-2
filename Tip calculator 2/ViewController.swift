@@ -16,40 +16,53 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var totalLabel: UILabel!
     
-    @IBOutlet weak var tipOptions: UISegmentedControl!
-    
     @IBOutlet weak var tipControl: UISegmentedControl!
 
     @IBOutlet weak var barView: UIView!
     
+    @IBOutlet weak var calculateButton: UIButton!
+    
+    @IBOutlet var horizontalDiv: UIView!
+
+    @IBOutlet weak var theWordTip: UILabel!
+    
+    @IBOutlet weak var theWordsTotalBill: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        billField.becomeFirstResponder()
+        
+        // Entry group
+        billField.frame = CGRect(x: 26, y: 190, width: 173, height: 30)
+        barView.frame = CGRect(x: 20, y: 240, width: 280, height: 1)
         barView.alpha = 0
-        barView.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
-        barView.backgroundColor = UIColor.blueColor()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // Results group
+        totalLabel.textColor = UIColor(red: 50/255, green: 188/255, blue: 50/255, alpha: 1)
+        tipLabel.alpha = 0
+        theWordTip.alpha = 0
+        totalLabel.alpha = 0
+        theWordsTotalBill.alpha = 0
+        
+        // Execution group
+        calculateButton.backgroundColor = UIColor(red: 50/255, green: 188/255, blue: 50/255, alpha: 1)
+        tipControl.alpha = 0
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
 
     @IBAction func tapArea(sender: AnyObject) {
         view.endEditing(true)
-        moveUp()
-        fade()
-        expandWithDelay()
-        changeColor()
+        
     }
     
     
-    internal func fade() {
-        UIView.animateWithDuration(1, animations: {
-            self.barView.alpha = 1
-        })
-    }
+   // internal func fade() {
+   //     UIView.animateWithDuration(1, animations: {
+   //         self.barView.alpha = 1
+   //     })
+   // }
+    
     
     internal func moveUp() {
         UIView.animateWithDuration(0.5, animations: {
@@ -59,14 +72,15 @@ class ViewController: UIViewController {
         }
     }
     
+    
     internal func expand() {
         UIView.animateWithDuration(0.5, animations: { () -> Void in
             self.barView.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
         }) { (value:Bool) -> Void in
             print ("expand executed")
         }
-    
     }
+    
 
     internal func expandWithDelay() {
         UIView.animateWithDuration(0.5, delay: 0.2, options: [], animations: {
@@ -76,6 +90,7 @@ class ViewController: UIViewController {
         }
     }
     
+    
     internal func changeColor() {
         UIView.animateWithDuration(2, delay: 0.6, options: [], animations: {
             self.barView.backgroundColor = UIColor.redColor()
@@ -83,6 +98,30 @@ class ViewController: UIViewController {
             print ("changeColor executed")
         }
     }
+    
+    
+    @IBAction func buttonFade(sender: AnyObject) {
+        UIView.animateWithDuration(0.3, animations: {
+            
+            // Entry group
+            self.billField.frame = CGRect(x: 26, y: 77, width: 173, height: 30)
+            self.barView.frame = CGRect(x: 20, y: 114, width: 280, height: 1)
+            self.barView.alpha = 1
+            
+            // Results group
+            self.tipLabel.alpha = 1
+            self.theWordTip.alpha = 1
+            self.totalLabel.alpha = 1
+            self.theWordsTotalBill.alpha = 1
+            
+            // Execution Group
+            self.calculateButton.alpha = 0
+            self.tipControl.alpha = 1
+        }) { (_) in
+            print ("buttonFade executed")
+        }
+    }
+    
     
     @IBAction func calculateTip(sender: AnyObject) {
         

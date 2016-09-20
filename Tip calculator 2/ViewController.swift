@@ -31,6 +31,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var splitTab: UIButton!
     
     
+// Set up initial state of all views
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -54,39 +56,23 @@ class ViewController: UIViewController {
         tipControl.alpha = 0
     }
     
-
-    @IBAction func tapArea(sender: AnyObject) {
-        view.endEditing(true)
-        
-    }
     
+// Create any animation functions that need their own parameters
     
-    internal func expand() {
-        UIView.animateWithDuration(0.5, animations: { () -> Void in
-            self.barView.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
-        }) { (value:Bool) -> Void in
-            print ("expand executed")
-        }
-    }
-    
-
-    internal func expandWithDelay() {
-        UIView.animateWithDuration(0.5, delay: 0.2, options: [], animations: {
-            self.barView.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
-            }) { (_) in
-                print ("expandWithDelay executed")
-        }
-    }
-    
-
     internal func splitFadeIn() {
         UIView.animateWithDuration(0.3, delay: 0.1, options: [], animations: {
             self.splitTab.alpha = 1
-            }) { (_) in
-                print ("splitFadeIn executed")
+        }) { (_) in
+            print ("splitFadeIn executed")
         }
     }
     
+    
+// Set up actions
+
+    @IBAction func tapArea(sender: AnyObject) {
+        view.endEditing(true)
+    }
     
     
     @IBAction func buttonFade(sender: AnyObject) {
@@ -115,12 +101,6 @@ class ViewController: UIViewController {
     }
     
     
-//    internal func adjustBillFont() {
-//        // Trying to figure out how to resize a textField font
-//        billField.font? = billField.font?.fontWithSize(50)
-//        print ("adjustBillFont loaded")
-//    }
-    
     
     @IBAction func calculateTip(sender: AnyObject) {
         
@@ -137,6 +117,12 @@ class ViewController: UIViewController {
 }
 
 
+
+
+
+
+
+// ** Elephant Graveyard **
 
 // internal func fade() {
 //     UIView.animateWithDuration(1, animations: {
@@ -163,4 +149,28 @@ class ViewController: UIViewController {
 //            print ("changeColor executed")
 //        }
 //    }
-    
+
+
+//    internal func adjustBillFont() {
+//        // Trying to figure out how to resize a textField font
+//        billField.font? = billField.font?.fontWithSize(50)
+//        print ("adjustBillFont loaded")
+//    }
+
+
+//  internal func expand() {
+//      UIView.animateWithDuration(0.5, animations: { () -> Void in
+//          self.barView.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
+//      }) { (value:Bool) -> Void in
+//          print ("expand executed")
+//      }
+//  }
+
+
+//   internal func expandWithDelay() {
+//       UIView.animateWithDuration(0.5, delay: 0.2, options: [], animations: {
+//       self.barView.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
+//           }) { (_) in
+//               print ("expandWithDelay executed")
+//       }
+//   }

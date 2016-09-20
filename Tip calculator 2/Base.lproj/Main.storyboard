@@ -80,6 +80,11 @@
                                     <action selector="buttonFade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zAa-5l-BqJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gZp-Fi-9ru">
+                                <rect key="frame" x="256" y="75" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Split"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -92,6 +97,7 @@
                         <outlet property="barView" destination="WCD-PY-YDT" id="kK0-A2-w90"/>
                         <outlet property="billField" destination="KY1-Sh-V6G" id="VMb-cC-ajk"/>
                         <outlet property="calculateButton" destination="SXY-kJ-cGW" id="I9v-Oi-XdT"/>
+                        <outlet property="splitTab" destination="gZp-Fi-9ru" id="5Fv-Fx-0M3"/>
                         <outlet property="theWordTip" destination="guh-Ll-KVN" id="5OD-S0-p1g"/>
                         <outlet property="theWordsTotalBill" destination="FUE-p0-fny" id="qNT-dd-bYN"/>
                         <outlet property="tipControl" destination="crp-Af-KHl" id="Tho-jJ-sxN"/>

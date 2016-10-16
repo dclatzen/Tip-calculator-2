@@ -34,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2383FF9D1D94C6F800921CC6 /* swift treehouse lesson 2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = "swift treehouse lesson 2.playground"; path = "../../../../../treehouse/swift/swift treehouse lesson 2.playground"; sourceTree = "<group>"; };
 		23919B071D87C2CD007E802D /* Tip calculator 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip calculator 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23919B0A1D87C2CD007E802D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23919B0C1D87C2CD007E802D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 		23919AFE1D87C2CD007E802D = {
 			isa = PBXGroup;
 			children = (
+				2383FF9D1D94C6F800921CC6 /* swift treehouse lesson 2.playground */,
 				23919B091D87C2CD007E802D /* Tip calculator 2 */,
 				23919B1E1D87C2CD007E802D /* Tip calculator 2Tests */,
 				23919B291D87C2CD007E802D /* Tip calculator 2UITests */,
@@ -482,6 +484,7 @@
 				23919B311D87C2CD007E802D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23919B321D87C2CD007E802D /* Build configuration list for PBXNativeTarget "Tip calculator 2Tests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +493,7 @@
 				23919B341D87C2CD007E802D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23919B351D87C2CD007E802D /* Build configuration list for PBXNativeTarget "Tip calculator 2UITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +502,7 @@
 				23919B371D87C2CD007E802D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
